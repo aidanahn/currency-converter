@@ -18,49 +18,49 @@
     </head> 
 
     <body>
-        <div>
+        <div class="application-container">                
             <h1>Currency Converter</h1>
-            <div>
-                <div>
+            <div class="container">
+                <div class="amount-container">
                     <p>Enter Amount</p>
-                    <input type="number" placeholder="1000">
+                    <input id="amount" type="number" placeholder="0">
                 </div>
-                <div>
+                <div class="currency-container">
                     <div>
                         <p>From</p>
-                        <div>
-                            <img src="icons/USA.svg">
-                            <select>
-                                <option>USD</option>
-                                <option>EUR</option>
-                                <option>GBP</option>
-                                <option>JPY</option>
+                        <div class="select-container">
+                            <img id="flag-one" src="icons/USA.svg">
+                            <select id="first-currency">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="JPY">JPY</option>
                             </select>
                         </div>
                     </div>
                     <div>
-                        <button>
-                            <img src="">
-                        </button>
+                        <img class="swap-btn" src="icons/swap.svg">
                     </div>
                     <div>
                         <p>To</p>
-                        <div>
-                            <img src="icons/USA.svg">
-                            <select>
-                                <option>USD</option>
-                                <option>EUR</option>
-                                <option>GBP</option>
-                                <option>JPY</option>
+                        <div class="select-container">
+                            <img id="flag-two" src="icons/USA.svg">
+                            <select id="second-currency">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="JPY">JPY</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>1,000 USD = 123123 EUR</p>
+                <div class="result">
+                    <p id="result-text">0 USD = 0.00000 USD</p>
                 </div>
             </div>
-            <button>Get Exchange Rate</button>
+            <div class="btn-container">
+                <button class="submit-btn">Get Exchange Rate</button>
+            </div>
         </div>
     </body>
 
